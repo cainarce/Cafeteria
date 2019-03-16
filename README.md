@@ -4,3 +4,5 @@ Aplicación web de la Cafetería Tecmilenio.
 Una app para estudiantes.
 
 ## Características
+<br>
+La mejor comida del viejo oeste, o del noroeste.

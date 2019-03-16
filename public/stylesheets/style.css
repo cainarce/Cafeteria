@@ -1,0 +1,82 @@
+body {
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.barraprincipal{
+  width:100%;
+  background-color:#01579B;
+  height:80px;
+  color:white;
+}
+.barradropdown{
+  background-color:#01579B;
+  height:80px;
+  color:white;
+}
+.menulinks{
+  margin-left:1200px;
+  color:white;
+}
+.linknav{
+  color:white;
+}
+.slide img{
+  height:400px;
+}
+.catalogo{
+  text-align:center;
+  margin-top:20px;
+}
+.galprod{
+  margin-left:50px;
+}
+.preciocarta{
+  color:red;
+  font-weight:bold;
+}
+.submenu1{
+  background-color:#CDDC39;
+  height:150px;
+  width:25%;
+  border-radius:20px;
+  margin-left:120px;
+  display:inline-block;
+}
+.submenu2{
+  background-color:#FF9800;
+  height:150px;
+  width:25%;
+  border-radius:20px;
+  margin-left:120px;
+  display:inline-block;
+}
+.submenu3{
+  background-color:#18FFFF;
+  height:150px;
+  width:25%;
+  border-radius:20px;
+  margin-left:120px;
+  display:inline-block;
+}
+.submenutexto{
+  color:white;
+  text-align:center;
+  margin-top:20px;
+}
+.submenu{
+  display:inline;
+  margin-top:-20px;
+  
+}
+.futer{
+  background-color:#0288D1;
+  color:white;
+}
+.creditos{
+  background-color:#01579B;
+}
+.displaycards{
+  display:inline-block;
+}

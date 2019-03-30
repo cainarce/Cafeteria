@@ -195,7 +195,7 @@
               console.log(data);
               for (var i = 0; i < data.length; i++){
                 var row = $("<div class='card galprod' style='width: 18rem;'>");
-                row.append($("<img class='card-img-top' src='https://truffle-assets.imgix.net/bd4909fe-torta-banana-split-thumbnail_square.jpg' alt='Card image cap'>"))
+                row.append($("<img class='card-img-top' src='" + data[i].url + "' alt='Card image cap'>"))
                 row.append($("<div class='card-body'>"))
                 row.append($("<h5 class='card-title'>"+ data[i].fileName + "</h5>"))
                 row.append($("<p class='card-text'>Una tarta de chocolate con mucho chocolate.</p>"));
@@ -203,6 +203,7 @@
                 row.append($("<br>"));
                 row.append($("<a href='#' class='btn btn-primary'>VER MÁS</a>"));
                 row.append($("<a href='#' class='btn btn-success'><i class='fas fa-cart-plus'></i></a>"));
+                row.append($("</div>"));
                 row.append($("</div>"));
                 $("#catItems div").append(row);
               }

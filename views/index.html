@@ -193,11 +193,11 @@
             success: function (data) {
               alert("Se cargó el catálogo");
               console.log(data);
-              for (var i = 0; i < data.length; i++){
+              $.map( data, function( elem, i ) {
                 var row = $("<div class='card galprod' style='width: 18rem;'>");
-                row.append($("<img class='card-img-top' src='" + data[i].url + "' alt='Card image cap'>"))
+                row.append($("<img class='card-img-top' src='" + elem.url + "' alt='Card image cap'>"))
                 row.append($("<div class='card-body'>"))
-                row.append($("<h5 class='card-title'>"+ data[i].fileName + "</h5>"))
+                row.append($("<h5 class='card-title'>"+ elem.fileName + "</h5>"))
                 row.append($("<p class='card-text'>Una tarta de chocolate con mucho chocolate.</p>"));
                 row.append($("<h3 class='preciocarta'>$39</h3>"));
                 row.append($("<br>"));
@@ -206,7 +206,7 @@
                 row.append($("</div>"));
                 row.append($("</div>"));
                 $("#catItems div").append(row);
-              }
+              });
             }
         });
     });

@@ -66,9 +66,9 @@
         </div>
 
         
-     <h1 class="catalogo">CATÁLOGO</h1>
-
-     <div id="catItems" class="card galprod" style="width: 18rem;">
+    <h1 class="catalogo">CATÁLOGO</h1>
+    <div id="catItems">
+     <div class="card galprod" style="width: 18rem;">
       <img class="card-img-top" src="https://truffle-assets.imgix.net/bd4909fe-torta-banana-split-thumbnail_square.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Tarta de Chocolate</h5>
@@ -78,6 +78,7 @@
         <a href="#" class="btn btn-primary">VER MÁS</a>
         <a href="#" class="btn btn-success"><i class="fas fa-cart-plus"></i></a>
       </div>
+     </div>
     </div>
 
     <br>
@@ -190,11 +191,13 @@
             type: 'get',
             url: 'https://cafeteriaappbe.herokuapp.com/items',
             success: function (data) {
-                
-                alert("Ok");
-                console.log(data);
-                var row = $("<div class='card-body'>");
-                row.append($("<h5 class='card-title'>"+ data[0].fileName + "</h5>"))
+              alert("Se cargó el catálogo");
+              console.log(data);
+              for (var i = 0; i < data.length; i++){
+                var row = $("<div class='card galprod' style='width: 18rem;'>");
+                row.append($("<img class='card-img-top' src='https://truffle-assets.imgix.net/bd4909fe-torta-banana-split-thumbnail_square.jpg' alt='Card image cap'>"))
+                row.append($("<div class='card-body'>"))
+                row.append($("<h5 class='card-title'>"+ data[i].fileName + "</h5>"))
                 row.append($("<p class='card-text'>Una tarta de chocolate con mucho chocolate.</p>"));
                 row.append($("<h3 class='preciocarta'>$39</h3>"));
                 row.append($("<br>"));
@@ -202,22 +205,7 @@
                 row.append($("<a href='#' class='btn btn-success'><i class='fas fa-cart-plus'></i></a>"));
                 row.append($("</div>"));
                 $("#catItems div").append(row);
-        
-         
-      
-                /*for (var i = 0; i < data.length; i++){
-                    var row = $("<tr>");
-                    row.append($("<td>" + data[i].numorder + "</td>"))
-                            .append($("<td>" + data[i].imagecount + "</td>"))
-                            .append($("<td>" + data[i].date + "</td>"))
-                            .append($("<td>" + data[i].status + "</td>"))
-                            .append($("<td><a href='/de_package_get/" + data[i]._id + "'>" + data[i].name + "</a></td>"))
-                            .append($("<td>" + data[i].userid + "</td>"))
-                            .append($("<td>" + data[i].isworking + "</td>"))
-                            .append($('<td><a id="icontable" href="/de_uploadimages/'+ data[i]._id +'"><img src="../images/icon_cloud.png" height="20px" width="20px"></a></td>'))
-                            .append($("<td><a href='/de_package_review/" + data[i]._id + "'>Revisar paquete</a></td>"));
-                    $("#orderstable tbody").append(row);
-                }*/
+              }
             }
         });
     });

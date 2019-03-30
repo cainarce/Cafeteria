@@ -68,7 +68,7 @@
         
      <h1 class="catalogo">CATÁLOGO</h1>
 
-     <div class="card galprod" style="width: 18rem;">
+     <div id="catItems" class="card galprod" style="width: 18rem;">
       <img class="card-img-top" src="https://truffle-assets.imgix.net/bd4909fe-torta-banana-split-thumbnail_square.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Tarta de Chocolate</h5>
@@ -192,6 +192,19 @@
             success: function (data) {
                 
                 alert("Ok");
+                console.log(data);
+                var row = $("<div class='card-body'>");
+                row.append($("<h5 class='card-title'>"+ data[0].fileName + "</h5>"))
+                row.append($("<p class='card-text'>Una tarta de chocolate con mucho chocolate.</p>"));
+                row.append($("<h3 class='preciocarta'>$39</h3>"));
+                row.append($("<br>"));
+                row.append($("<a href='#' class='btn btn-primary'>VER MÁS</a>"));
+                row.append($("<a href='#' class='btn btn-success'><i class='fas fa-cart-plus'></i></a>"));
+                row.append($("</div>"));
+                $("#catItems div").append(row);
+        
+         
+      
                 /*for (var i = 0; i < data.length; i++){
                     var row = $("<tr>");
                     row.append($("<td>" + data[i].numorder + "</td>"))

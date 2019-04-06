@@ -1,12 +1,13 @@
 body {
   
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Baloo Chettan', cursive;
 }
 
 
 .barraprincipal{
   width:100%;
-  background-color:#01579B;
+  background-color:#0D47A1
+  ;
   height:80px;
   color:white;
 }
@@ -16,7 +17,7 @@ body {
   color:white;
 }
 .menulinks{
-  margin-left:1200px;
+  margin-left:742px;
   color:white;
 }
 .linknav{
@@ -75,8 +76,72 @@ body {
   color:white;
 }
 .creditos{
-  background-color:#01579B;
+  background-color:#304FFE;
+}
+.logotecmi{
+  
+  height:130px;
+  margin-top:8px;
 }
 .displaycards{
   display:inline-block;
+}
+.btnmenu1{
+  
+  
+    width: 130px;
+    height: 100px;
+    transform: skew(340deg);
+    background:#1E88E5;
+    font-family: 'Oswald', sans-serif;
+  
+
+}
+.btnmenu1 h2{
+  text-align: center;
+  margin-top:20px;
+  font-family: 'Baloo Chettan', cursive;
+}
+
+.btnmenu2{
+  
+  
+  width: 170px;
+  height: 100px;
+  transform: skew(340deg);
+  background:#1976D2;
+
+
+}
+.btnmenu2 h2{
+  text-align: center;
+  margin-top:20px;
+  margin-left:-5px;
+  font-family: 'Baloo Chettan', cursive;
+}
+.btnmenu3{
+  
+  
+  width: 150px;
+  height: 100px;
+  transform: skew(340deg);
+  background:#1565C0
+  ;
+
+
+}
+.btndudas{
+  
+  width: 100px;
+  height: 100px;
+  background: #388E3C;
+  margin-left:-25px;
+}
+.btndudas h2{
+  margin-bottom:20px;
+  text-align:center;
+  position:absolute;
+  left:1538px;
+  top:10px;
+  font-size:50px;
 }

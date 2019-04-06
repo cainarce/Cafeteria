@@ -187,9 +187,9 @@
                 var element = $("<div class='card galprod displaycards catalogo' style='width: 18rem;'>");
                 element.append($("<img class='card-img-top' src='" + elem.url + "' alt='Card image cap'>"))
                 element.append($("<div class='card-body'>"))
-                element.append($("<h5 class='card-title'>"+ elem.fileName + "</h5>"))
-                element.append($("<p class='card-text'>Una tarta de chocolate con mucho chocolate.</p>"));
-                element.append($("<h3 class='preciocarta'>$39</h3>"));
+                element.append($("<h5 class='card-title'>"+ elem.itemName + "</h5>"))
+                element.append($("<p class='card-text'>"+ elem.description +"</p>"));
+                element.append($("<h3 class='preciocarta'>"+ elem.price +"</h3>"));
                 element.append($("<br>"));
                 element.append($("<a href='#' class='btn btn-primary'>VER MÁS</a>"));
                 element.append($("<a href='#' class='btn btn-success'><i class='fas fa-cart-plus'></i></a>"));

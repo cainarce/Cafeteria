@@ -183,7 +183,7 @@
               alert("Se cargó el catálogo");
               console.log(data);
               $.map( data, function( elem, i ) {
-                var element = $("<div class='card galprod' style='width: 18rem;'>");
+                var element = $("<div class='card galprod displaycards catalogo' style='width: 18rem;'>");
                 element.append($("<img class='card-img-top' src='" + elem.url + "' alt='Card image cap'>"))
                 element.append($("<div class='card-body'>"))
                 element.append($("<h5 class='card-title'>"+ elem.fileName + "</h5>"))

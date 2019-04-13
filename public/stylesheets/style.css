@@ -48,33 +48,33 @@ body {
   font-weight:bold;
 }
 .submenu1{
-  background-color:#CDDC39;
-  height:150px;
-  width:25%;
+  background-color:#03C762;
+  height:100px;
+  width:20%;
   border-radius:20px;
-  margin-left:120px;
+  margin-left:228px;
   display:inline-block;
 }
 .submenu2{
   background-color:#FF9800;
-  height:150px;
-  width:25%;
+  height:100px;
+  width:20%;
   border-radius:20px;
-  margin-left:120px;
+  margin-left:50px;
   display:inline-block;
 }
 .submenu3{
-  background-color:#18FFFF;
-  height:150px;
-  width:25%;
+  background-color:#47B8F1;
+  height:100px;
+  width:20%;
   border-radius:20px;
-  margin-left:120px;
+  margin-left:50px;
   display:inline-block;
 }
 .submenutexto{
   color:white;
   text-align:center;
-  margin-top:20px;
+  margin-top:30px;
 }
 .submenu{
   display:inline;

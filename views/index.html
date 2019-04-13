@@ -181,7 +181,6 @@
             type: 'get',
             url: 'https://cafeteriaappbe.herokuapp.com/items',
             success: function (data) {
-              alert("Se cargó el catálogo");
               console.log(data);
               $.map( data, function( elem, i ) {
                 var element = $("<div class='card galprod displaycards catalogo' style='width: 18rem;'>");
